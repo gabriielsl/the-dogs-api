@@ -26,7 +26,7 @@ export function Card() {
         if (!breeds || breeds.length === 0) return null     // A condição verifica se o array está vazio. Se sim, nada será renderizado
 
         return (
-            <div key={url} className="flex gap-5 mb-5 p-5 border rounded-xl">
+            <div key={url} className="flex gap-5 mb-5 p-5 border rounded-xl bg-green-300">
                 <img className="w-50 h-50 object-cover rounded-xl border" src={url} alt={name} />
                 <p className="leading-loose">
                   Nome: <strong> {name} </strong> <br/>
